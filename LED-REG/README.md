@@ -108,5 +108,6 @@ STM32F4XX_Dev/
 
 ## Notes
 
-- 板載 RGB LED 為 active-low：
-```
+- 板載 RGB LED 為 active-low：GPIO 輸出 LOW 時 LED 亮。
+- `LED-REG` 使用 busy-wait delay，時間會受 CPU clock 與 compiler optimization 影響。
+- 本 Repository 是學習與實驗紀錄，不是 production-ready driver。
