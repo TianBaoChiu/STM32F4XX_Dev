@@ -1,0 +1,27 @@
+# Keil generated output
+**/Objects/
+**/Output/
+**/Listing/
+**/Listings/
+**/DebugConfig/
+**/RTE/
+
+*.axf
+*.bin
+*.build_log.htm
+*.d
+*.dbgconf
+*.dbgconf.*
+*.dep
+*.hex
+*.htm
+*.lnp
+*.lst
+*.map
+*.o
+*.sct
+*.scvd
+
+# Per-user IDE state
+*.uvguix.*
+*.uvoptx
