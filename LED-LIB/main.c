@@ -7,6 +7,11 @@ static void delay_loop(uint32_t count);
 
 int main(void)
 {
+
+
+
+
+	
 	
 	/*Enable AHB1 Clock for GPIOF Port*/
 	RCC->RCC_AHB1ENR |= (0x01 << 5);
@@ -33,34 +38,34 @@ int main(void)
 	while(1)
 	{
 		/*Set GPIOF 8 pin output HIGH level(B)*/
-		GPIO_SetBits(GPIOF, 1 << 8);
+		GPIO_SetBits(GPIOF, GPIO_PIN_8);
 		/*Set GPIOF 6 pin output HIGH level(R)*/
-		GPIO_SetBits(GPIOF, 1 << 7);
+		GPIO_SetBits(GPIOF, GPIO_PIN_7);
 		
 		/*Set GPIOF 6 pin output LOW level(R)*/
-		GPIO_ResetBits(GPIOF, 1 << 6);
+		GPIO_ResetBits(GPIOF, GPIO_PIN_6);
 		
 		delay_loop(DELAY_COUINT);
 		
 		/*Set GPIOF 6 pin output HIGH level(R)*/
-		GPIO_SetBits(GPIOF, 1 << 6);
+		GPIO_SetBits(GPIOF, GPIO_PIN_6);
 		
 		/*Set GPIOF 8 pin output HIGH level(G)*/
-		GPIO_SetBits(GPIOF, 1 << 8);
+		GPIO_SetBits(GPIOF, GPIO_PIN_8);
 		
 		/*Set GPIOF 7 pin output LOW level(G)*/
-		GPIO_ResetBits(GPIOF, 1 << 7);
+		GPIO_ResetBits(GPIOF, GPIO_PIN_7);
 		
 		delay_loop(DELAY_COUINT);
 		
 		/*Set GPIOF 7 pin output HIGH level(G)*/
-		GPIO_SetBits(GPIOF, 1 << 7);
+		GPIO_SetBits(GPIOF, GPIO_PIN_7);
 		
 		/*Set GPIOF 6 pin output HIGH level(B)*/
-		GPIO_SetBits(GPIOF, 1 << 6);
+		GPIO_SetBits(GPIOF, GPIO_PIN_6);
 		
 		/*Set GPIOF 8 pin output LOW level(B)*/
-		GPIO_ResetBits(GPIOF, 1 << 8);
+		GPIO_ResetBits(GPIOF, GPIO_PIN_8);
 		
 		delay_loop(DELAY_COUINT);
 	}
