@@ -32,38 +32,35 @@ int main(void)
 	
 	while(1)
 	{
-		
-				
 		/*Set GPIOF 8 pin output HIGH level(B)*/
-		GPIOF->ODR |= (1 << 8);
-		
+		GPIO_SetBits(GPIOF, 1 << 8);
 		/*Set GPIOF 6 pin output HIGH level(R)*/
-		GPIOF->ODR |= (1 << 6);
+		GPIO_SetBits(GPIOF, 1 << 7);
 		
 		/*Set GPIOF 6 pin output LOW level(R)*/
-		GPIOF->ODR &= ~(1 << 6);
+		GPIO_ResetBits(GPIOF, 1 << 6);
 		
 		delay_loop(DELAY_COUINT);
 		
 		/*Set GPIOF 6 pin output HIGH level(R)*/
-		GPIOF->ODR |= (1 << 6);
+		GPIO_SetBits(GPIOF, 1 << 6);
 		
-		/*Set GPIOF 7 pin output HIGH level(G)*/
-		GPIOF->ODR |= (1 << 7);
+		/*Set GPIOF 8 pin output HIGH level(G)*/
+		GPIO_SetBits(GPIOF, 1 << 8);
 		
 		/*Set GPIOF 7 pin output LOW level(G)*/
-		GPIOF->ODR &= ~(1 << 7);
+		GPIO_ResetBits(GPIOF, 1 << 7);
 		
 		delay_loop(DELAY_COUINT);
 		
 		/*Set GPIOF 7 pin output HIGH level(G)*/
-		GPIOF->ODR |= (1 << 7);
+		GPIO_SetBits(GPIOF, 1 << 7);
 		
-		/*Set GPIOF 8 pin output HIGH level(B)*/
-		GPIOF->ODR |= (1 << 8);
+		/*Set GPIOF 6 pin output HIGH level(B)*/
+		GPIO_SetBits(GPIOF, 1 << 6);
 		
 		/*Set GPIOF 8 pin output LOW level(B)*/
-		GPIOF->ODR &= ~(1 << 8);
+		GPIO_ResetBits(GPIOF, 1 << 8);
 		
 		delay_loop(DELAY_COUINT);
 	}
