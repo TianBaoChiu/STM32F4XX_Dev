@@ -2,7 +2,6 @@
 #define _STM32FXX_H
 
 #include <stdint.h>
-#include "stm32f4xx_gpio.h"
 
 #define __IO                volatile
 #define __I                 volatile

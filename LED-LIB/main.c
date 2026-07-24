@@ -1,4 +1,7 @@
 #include "stm32f4xx.h"
+#include "stm32f4xx_gpio.h"
+
+
 #include <arm_acle.h>
 
 
@@ -8,11 +11,6 @@ static void delay_loop(uint32_t count);
 int main(void)
 {
 
-
-
-
-	
-	
 	/*Enable AHB1 Clock for GPIOF Port*/
 	RCC->RCC_AHB1ENR |= (0x01 << 5);
 	
