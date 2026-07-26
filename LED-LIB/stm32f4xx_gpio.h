@@ -23,13 +23,9 @@
 #define GPIO_PIN_ALL             ((uint16_t)(0xFFFF))
 
 
-void GPIO_SetBits(GPIO_TypeDef * GPIO, uint16_t GPIO_Pin);
-void GPIO_ResetBits(GPIO_TypeDef * GPIO, uint16_t GPIO_Pin);
-
-
 typedef enum
 {
-    GPIO_INPUT       = 0x00,
+    GPIO_INPUT       = 0x00,     /*reset*/
     GPIO_OUTPUT      = 0x01,
     GPIO_ALT_MODE    = 0x02,
     GPIO_ANALOG_MODE = 0x03
@@ -69,4 +65,9 @@ typedef struct
     GPIOOspeed_TypeDef  GPIO_Ospeed;
 }GPIO_InitTypeDef;
 
+
+
+void GPIO_SetBits(GPIO_TypeDef * GPIO, uint16_t GPIO_Pin);
+void GPIO_ResetBits(GPIO_TypeDef * GPIO, uint16_t GPIO_Pin);
+void GPIO_Init(GPIO_TypeDef * GPIO, GPIO_InitTypeDef * GPIO_Init_Def);
 #endif

@@ -11,27 +11,24 @@ static void delay_loop(uint32_t count);
 int main(void)
 {
 
+	GPIO_InitTypeDef GPIO_Init_Struct;
+
 	/*Enable AHB1 Clock for GPIOF Port*/
 	RCC->RCC_AHB1ENR |= (0x01 << 5);
-	
-	/*Clean reg value at bit 12 and 13*/
-	GPIOF->MODER &= ~(0x03 << 2*6);
-	
-		/*Clean reg value at bit 14 and 15*/
-	GPIOF->MODER &= ~(0x03 << 2*7);
 
-		/*Clean reg value at bit 16 and 17*/
-	GPIOF->MODER &= ~(0x03 << 2*8);
+
+	/*Init PF6、7、8*/
+	GPIO_Init_Struct.GPIO_PinNum = GPIO_PIN_6 | GPIO_PIN_7 | GPIO_PIN_8;
+
+	GPIO_Init_Struct.GPIO_Mode = GPIO_OUTPUT;
+
+	GPIO_Init_Struct.GPIO_PuPd = GPIO_PULL_UP;
+
+	GPIO_Init_Struct.GPIO_OType = GPIO_PUSH_PULL;
+
+	GPIO_Init_Struct.GPIO_Ospeed = GPIO_SPEED_LOW;
 	
-	
-	/*Set reg value at bit 12 and 13 as Output mode*/
-	GPIOF->MODER |= (0x01 << 2*6);
-	
-		/*Set reg value at bit 14 and 15 as Output mode*/
-	GPIOF->MODER |= (0x01 << 2*7); 
-	
-		/*Set reg value at bit 16 and 17 as Output mode*/
-	GPIOF->MODER |= (0x01 << 2*8);
+	GPIO_Init(GPIOF, &GPIO_Init_Struct);
 	
 	while(1)
 	{
