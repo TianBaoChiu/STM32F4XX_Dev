@@ -84,10 +84,10 @@ void Debug_USART_Config(void)
 
     //配置中斷
     /* 嵌套向量中断控制器NVIC配置 */
-    // NVIC_Configuration();
+    NVIC_Configuration();
 
     // /* 使能串口接收中断 */
-    // USART_ITConfig(DEBUG_USART, USART_IT_RXNE, ENABLE);
+    USART_ITConfig(DEBUG_USART, USART_IT_RXNE, ENABLE);
 
     /* 使能串口 */
     USART_Cmd(DEBUG_USART, ENABLE);

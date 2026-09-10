@@ -29,6 +29,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_it.h"
+#include "bsp_usart.h"
 
 /** @addtogroup Template_Project
   * @{
@@ -131,6 +132,23 @@ void DebugMon_Handler(void)
   */
 void PendSV_Handler(void)
 {
+}
+
+void DEBUG_USART_IRQHandler(void)
+{
+    uint8_t received_data;
+
+    if (USART_GetITStatus(
+            DEBUG_USART,
+            USART_IT_RXNE) != RESET)
+    {
+        received_data =
+            (uint8_t)USART_ReceiveData(DEBUG_USART);
+
+        Usart_SendString(DEBUG_USART, "MCU received: ");
+        Usart_SendByte(DEBUG_USART, received_data);
+        Usart_SendString(DEBUG_USART, "\r\n");
+    }
 }
 /******************************************************************************/
 /*                 STM32F4xx Peripherals Interrupt Handlers                   */
