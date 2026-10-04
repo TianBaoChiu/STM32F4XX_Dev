@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/build/Debug/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

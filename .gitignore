@@ -22,6 +22,21 @@
 *.sct
 *.scvd
 
+# STM32CubeIDE / VS Code CMake build output (includes Ninja and CMake caches)
+build/
+Debug/
+Release/
+*.elf
+*.obj
+*.su
+*.cyclo
+compile_commands.json
+
+# IDE workspace state, clangd index, and local CMake presets
+.metadata/
+**/.cache/clangd/
+CMakeUserPresets.json
+
 # Per-user IDE state
 *.uvguix.*
 *.uvoptx

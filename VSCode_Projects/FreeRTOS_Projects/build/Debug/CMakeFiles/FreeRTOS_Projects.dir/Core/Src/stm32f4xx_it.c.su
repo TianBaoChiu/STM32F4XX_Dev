@@ -1,7 +1,0 @@
-D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_it.c:70:6:NMI_Handler	4	static
-D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_it.c:85:6:HardFault_Handler	4	static
-D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_it.c:100:6:MemManage_Handler	4	static
-D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_it.c:115:6:BusFault_Handler	4	static
-D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_it.c:130:6:UsageFault_Handler	4	static
-D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_it.c:158:6:DebugMon_Handler	4	static
-D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_it.c:205:6:TIM6_DAC_IRQHandler	8	static
