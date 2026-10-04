@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="SystemClock_Config()"/>
+			<item value="TIM6_DAC_IRQHandler"/>
+			<item value="SVC_Handler"/>
+			<item value="configUSE_TIMERS    "/>
+			<item value="configSUPPORT_STATIC_ALLOCATION     "/>
+			<item value="configTOTAL_HEAP_SIZE    "/>
+			<item value="configCHECK_FOR_STACK_OVERFLOW    "/>
+			<item value="configKERNEL_INTERRUPT_PRIORITY          "/>
+			<item value="SystemClock_Config"/>
+			<item value="configCPU_CLOCK_HZ    "/>
+			<item value="configUSE_PREEMPTION"/>
+		</list>
+	</section>
+</section>

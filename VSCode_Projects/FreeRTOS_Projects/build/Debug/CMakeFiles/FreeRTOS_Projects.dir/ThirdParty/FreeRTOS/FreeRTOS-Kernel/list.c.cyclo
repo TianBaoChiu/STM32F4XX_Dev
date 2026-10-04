@@ -1,0 +1,5 @@
+D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/ThirdParty/FreeRTOS/FreeRTOS-Kernel/list.c:49:6:vListInitialise	1
+D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/ThirdParty/FreeRTOS/FreeRTOS-Kernel/list.c:89:6:vListInitialiseItem	1
+D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/ThirdParty/FreeRTOS/FreeRTOS-Kernel/list.c:105:6:vListInsertEnd	1
+D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/ThirdParty/FreeRTOS/FreeRTOS-Kernel/list.c:139:6:vListInsert	3
+D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/ThirdParty/FreeRTOS/FreeRTOS-Kernel/list.c:217:13:uxListRemove	2

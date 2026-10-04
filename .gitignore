@@ -25,3 +25,4 @@
 # Per-user IDE state
 *.uvguix.*
 *.uvoptx
+/Software&Toolchain

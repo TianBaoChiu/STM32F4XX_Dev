@@ -1,0 +1,3 @@
+D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_hal_timebase_tim.c:41:19:HAL_InitTick	5
+D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_hal_timebase_tim.c:121:6:HAL_SuspendTick	1
+D:/Workspace/Learning/STM32/STM32F4XX_Dev/VSCode_Projects/FreeRTOS_Projects/Core/Src/stm32f4xx_hal_timebase_tim.c:133:6:HAL_ResumeTick	1
