@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32F407 - fireDAP",
+            "type": "cortex-debug",
+            "request": "launch",
+
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/FreeRTOS_Projects.elf",
+
+            "servertype": "openocd",
+
+            "serverpath": "C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.openocd.win32_2.4.500.202604080855/tools/bin/openocd.exe",
+
+            "searchDir": [
+                "${workspaceFolder}",
+                "C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.400.202606220929/resources/openocd/st_scripts"
+            ],
+
+            "configFiles": [
+                "fireDAP.cfg"
+            ],
+
+            "gdbPath": "C:/Users/seeda/AppData/Local/stm32cube/bundles/gnu-gdb-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gdb.exe",
+
+            "toolchainPath": "C:/Users/seeda/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin",
+
+            "toolchainPrefix": "arm-none-eabi",
+
+            "runToEntryPoint": "main"
+        }
+    ]
+}
