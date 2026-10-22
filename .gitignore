@@ -41,3 +41,8 @@ CMakeUserPresets.json
 *.uvguix.*
 *.uvoptx
 /Software&Toolchain
+
+# Claude Code 相關檔案（不上傳）
+CLAUDE.md
+CLAUDE.local.md
+.claude/
